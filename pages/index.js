@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import SearchBar from '../components/SearchBar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Hello World</h1>
+      <SearchBar type='text' placeholder='Search'/>
     </div>
   )
 }

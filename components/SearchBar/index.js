@@ -1,11 +1,11 @@
-import React from 'react'
+import styles from './Search.module.css';
 
-const index = () => {
+const SearchBar = ({ ...rest }) => {
   return (
-    <div>
-      
+    <div className={styles.coin.search}>
+      <input className={styles.coin.input} {...rest} />
     </div>
   )
 }
 
-export default index
+export default SearchBar;
