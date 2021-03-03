@@ -1,7 +1,12 @@
-const Coins = () => {
+const Coins = ({ name, price, symbol, marketcap, volume, image, priceChange, id }) => {
   return (
-    <div>
-      <h1>coins</h1>
+    <div className="coin_container">
+      <div className="coin_row">
+        <div className="coin">
+          <img src={image} alt={name} className="coin_img"/>
+          <h1 className="coin_h1">{name}</h1>
+        </div>
+      </div>
     </div>
     );
 };
