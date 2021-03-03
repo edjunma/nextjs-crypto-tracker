@@ -1,4 +1,4 @@
-import Coins from '../components/Coins';
+import CoinList from '../components/CoinList';
 import SearchBar from '../components/SearchBar';
 
 
