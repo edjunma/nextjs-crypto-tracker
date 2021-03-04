@@ -11,7 +11,7 @@ export default function Home({ filteredCoins }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <SearchBar type='text' placeholder='Search'/> */}
+      <SearchBar type='text' placeholder='Search'/>
       <CoinList filteredCoins={filteredCoins} />
     </div>
   )
