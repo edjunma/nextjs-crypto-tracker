@@ -1,3 +1,6 @@
+import Head from 'next/head';
+import Link from 'next/link';
+
 const Layout = ({children, title = "Crypto Tracker"}) => {
   return (
     <div className="layout">
@@ -63,6 +66,9 @@ const Layout = ({children, title = "Crypto Tracker"}) => {
           </a>
         </Link>
       </header>
+      <main>{children}</main>
     </div>
   )
 }
+
+export default Layout;

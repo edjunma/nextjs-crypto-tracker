@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import CoinList from '../components/CoinList';
 import SearchBar from '../components/SearchBar';
+import Layout from '../components/Layout';
 
 
 export default function Home({ filteredCoins }) {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Crypto Tracker</title>
         <link rel="icon" href="/favicon.ico" />
@@ -13,7 +14,7 @@ export default function Home({ filteredCoins }) {
 
       <SearchBar type='text' placeholder='Search'/>
       <CoinList filteredCoins={filteredCoins} />
-    </div>
+    </Layout>
   )
 }
 
