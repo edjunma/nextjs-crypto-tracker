@@ -10,6 +10,12 @@ export default function Home({ filteredCoins }) {
   const allCoins = filteredCoins.filter(coin => 
     coin.name.toLowerCase().includes(search.toLowerCase()))
 
+    const handleChange = e => {
+      e.preventDefault()
+
+      setSearch(e.target.value.toLowerCase())
+    }
+
   return (
     <Layout>
       <div className="coin_app">
