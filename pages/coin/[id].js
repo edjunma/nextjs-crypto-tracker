@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout';
+import styles from './Coin.module.css';
 
 const Coin = ({ coin }) => {
   return (
@@ -15,4 +16,20 @@ const Coin = ({ coin }) => {
       </div>
     </Layout>
     )
+}
+
+export default Coin;
+
+export async function getServerSideProps(context) {
+  const {id} = context.query;
+
+  const res = await fetch(`https://api.coingecko.com/api/v3/coins/${id}`)
+
+  const data = await res.json()
+
+  return {
+    props: {
+      coin: data
+    }
+  }
 }
