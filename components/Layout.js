@@ -5,7 +5,7 @@ const Layout = ({children, title = "Crypto Tracker"}) => {
   return (
     <div className="layout">
       <Head>
-        <title>Crypto Tracker</title>
+        <title>Crypto Sniff</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="header">
